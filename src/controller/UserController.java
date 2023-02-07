@@ -30,6 +30,11 @@ public class UserController {
     public User addUser(@RequestBody User user) {
         return userService.add(user);
     }
+    
+    @PostMapping("/user")
+    public User searchUser(@RequestBody User user) {
+        return userService.search(user);
+    }
 
 
 
